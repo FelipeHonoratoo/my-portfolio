@@ -6,23 +6,24 @@
 	<title>My Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&family=Press+Start+2P&family=Source+Code+Pro&display=swap">
+	<script src="https://kit.fontawesome.com/95f9c7fcde.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 	<nav class="menu">
 		<ul>
 			<li><a href="#">Sobre</a></li>
-			<li><a href="#">Portfólio</a></li>
-			<li><a href="#">Contato</a></li>
+			<li><a href="#portfolio">Portfólio</a></li>
+			<li><a href="#contato">Contato</a></li>
 		</ul>
 	</nav>
-	<div>
+	<div class="titulo">
 		<h1 class="site-title">Felipe Honorato da Silva</h1>
 		<h2 class="site-subtitle">Jr. Software Developer</h2>
 	</div>
 	</header>
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<h2>Portfólio</h2>
 			<div class="grid">
 				<figure>
@@ -42,6 +43,21 @@
 					<figcaption>Web design</figcaption>
 				</figure>
 			</div>
+	</section>
+
+	<section class="contato" id="contato">
+		<h2>Contato</h2>
+		<div class="grid icons">
+			<a href="https://github.com/FelipeHonoratoo">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/felipehonorato/">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a href="mailto:felipehonoratods@gmail.com">
+				<i class="fas fa-envelope"></i>
+			</a>
+		</div>
 	</section>
 </body>
 </html>
