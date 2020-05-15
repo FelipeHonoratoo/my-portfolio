@@ -1,2 +1,3 @@
 # My Portfolio
- A professional presentation of mine.
+ 
+A professional presentation of mine, using only HTML and CSS.
