@@ -11,8 +11,8 @@
 <body>
 	<header>
 	<nav class="menu">
-		<ul>
-			<li><a href="#">Sobre</a></li>
+		<ul class="container">
+			<li><a href="#sobre">Sobre</a></li>
 			<li><a href="#portfolio">Portfólio</a></li>
 			<li><a href="#contato">Contato</a></li>
 		</ul>
@@ -23,29 +23,80 @@
 	</div>
 	</header>
 
-	<section class="portfolio" id="portfolio">
+	<section class="sobre container" id="sobre">
+		<h2>Sobre</h2>
+
+		<figure>
+			<img src="https://avatars2.githubusercontent.com/u/63470540?s=460&u=81e26deccf7fd4a0005802ec028a67796d1741d2&v=4" 
+			alt="Felipe Honorato">
+			
+			<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. </p>
+			
+			<p>Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+
+			<p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. </p>
+				
+			<p>Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.</p>
+		</figure>
+	</section>
+
+	<section class="portfolio container" id="portfolio">
 		<h2>Portfólio</h2>
+
 			<div class="grid">
-				<figure>
-					<img class="img-portfolio" src="img/ecommerce.jpg" alt="eCommerce">
-					<figcaption>eCommerce</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="img/mobile.jpg" alt="Mobile">
-					<figcaption>Mobile</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="img/projpessoais.jpg" alt="Porjetos pessoais">
-					<figcaption>Projetos pessoais</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="img/webdesign.jpg" alt="Web design">
-					<figcaption>Web design</figcaption>
-				</figure>
+
+				<div class="flip-card">
+		          <div class="card">
+		            <figure class="card-front">
+						<img class="img-portfolio" src="img/ecommerce.jpg" alt="eCommerce">
+						<figcaption>eCommerce</figcaption>
+					</figure>
+		            <div class="card-back">
+		              <p>By. Felipe Honorato</p>
+		            </div>
+		          </div>
+		        </div>
+
+		        <div class="flip-card">
+		          <div class="card">
+		            <figure class="card-front">
+						<img class="img-portfolio" src="img/mobile.jpg" alt="Mobile">
+						<figcaption>Mobile</figcaption>
+					</figure>
+		            <div class="card-back">
+		              <p>By. Felipe Honorato</p>
+		            </div>
+		          </div>
+		        </div>
+
+		        <div class="flip-card">
+		          <div class="card">
+		            <figure class="card-front">
+						<img class="img-portfolio" src="img/projpessoais.jpg" alt="Porjetos pessoais">
+						<figcaption>Projetos pessoais</figcaption>
+					</figure>
+		            <div class="card-back">
+		              <p>By. Felipe Honorato</p>
+		            </div>
+		          </div>
+		        </div>
+
+				<div class="flip-card">
+		          <div class="card">
+		            <figure class="card-front">
+						<img class="img-portfolio" src="img/webdesign.jpg" alt="Web design">
+						<figcaption>Web design</figcaption>
+					</figure>
+		            <div class="card-back">
+		              <p>By. Felipe Honorato</p>
+		            </div>
+		          </div>
+		        </div>
+
 			</div>
 	</section>
 
-	<section class="contato" id="contato">
+	<section class="contato container" id="contato">
 		<h2>Contato</h2>
 		<div class="grid icons">
 			<a href="https://github.com/FelipeHonoratoo">

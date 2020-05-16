@@ -11,13 +11,13 @@ body {
 	height: 100vh;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 400px) {
 	body {
 		font-size: 14px;
 	}
 }
 
-@media (min-width: 625px) {
+@media (min-width: 600px) {
 	body {
 		font-size: 18px;
 	}
@@ -50,7 +50,7 @@ header {
 .menu a {
 	display: block;
 	padding: 10px 20px;
-	transition: 2s;
+	transition: 500ms;
 }
 
 .menu a:active,
@@ -62,10 +62,6 @@ header {
 a {
 	color: #4F4F4F;
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 .titulo {
@@ -99,18 +95,49 @@ a:hover {
 	line-height: 1.8em;
 }
 
+.sobre,
 .contato,
 .portfolio {
 	padding: 2em;
 	min-height: 100vh;
 }
 
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.sobre h2,
 .contato h2,
 .portfolio h2 {
 	font-family: 'Press Start 2P', cursive;
 	color: whitesmoke;
 	margin-bottom: 1.5em;
 	font-size: 2em;
+}
+
+.sobre p {
+	color: whitesmoke;
+	margin-bottom: 1.2em;
+	text-indent: 1.8em;
+	text-align: justify;
+}
+
+.sobre img {
+	width: 300px;
+	height: 300px;
+	float: right;
+	margin-left: 1em;
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+@media (min-width: 560px) {
+	.sobre img {
+		clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	}
 }
 
 .portfolio .grid {
@@ -133,6 +160,41 @@ a:hover {
 	}
 }
 
+.flip-card {
+  height: 180px;
+  perspective: 500px;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card-front, 
+.card-back {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
 .portfolio figure {
 	text-align: center;
 }
@@ -146,9 +208,9 @@ a:hover {
 	transition: transform, 500ms;
 }
 
-.img-portfolio:hover {
+/* .img-portfolio:hover {
 	transform: scale(1.2) rotateX(45deg);
-}
+} */
 
 .contato .icons {
 	text-align: center;
@@ -157,7 +219,7 @@ a:hover {
 .contato a {
 	color: whitesmoke;
 	font-size: 5em;
-	transition: text-shadow, 1s;
+	transition: text-shadow, 500ms;
 }
 
 .contato a:active,
